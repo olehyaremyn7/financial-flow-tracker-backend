@@ -1,0 +1,11 @@
+{
+  "verbose": true,
+  "signal": "SIGTERM",
+  "watch": ["src/**/*.ts"],
+  "exec": "ts-node --esm --transpile-only src/bin/server.ts",
+  "ext": "ts,json",
+  "ignore": [".git", "node_modules", "server", "e2e", "src/spec/**/*.spec.ts", "coverage", ".husky", ".github"],
+  "execMap": {
+    "ts": "ts-node"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@myhelper/*": ["packages/myhelper/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ESNext"],
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "allowJs": false,
+    "sourceMap": false,
+    "composite": true,
+    "types": ["node"]
+  },
+  "include": ["**/*.ts", ".eslintrc.json", "../playwright.config.ts"]
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>FinancialFlowTracker API</title>
+    <base href="/" />
+    <meta name="theme-color" content="#4659B7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Back-end for the FinancialFlowTracker application" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #252525;
+        color: #FFFFFF;
+      }
+
+      main {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .not-found {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        padding: 0 2rem;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem 0;
+      }
+
+      .title {
+        display: inline-block;
+        margin: 0;
+        font-size: 6rem;
+        font-weight: 700;
+      }
+
+      .sub-title {
+        display: inline-block;
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .message {
+        display: inline-block;
+        margin: 1rem 0 0 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+
+      .actions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.875rem 0;
+      }
+
+      .divider {
+        margin: 0.625rem 0;
+        border-bottom: 2px solid rgb(189 189 189);
+        border-radius: 50%;
+      }
+
+      .actions a {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 40%;
+        padding: 1rem 0;
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-decoration: none;
+        border-radius: 0.25rem;
+        background-color: #3f51b5;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+        line-height: inherit;
+        user-select: none;
+        -webkit-appearance: none;
+        overflow: visible;
+        vertical-align: middle;
+      }
+
+      .actions a:hover {
+        background-color: #364cc2;
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+      }
+
+      .actions a button {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+      }
+
+      .tip {
+        display: inline-block;
+        margin: 0;
+        font-size: 1.375rem;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="not-found">
+        <div class="container">
+          <div class="content">
+            <h1 class="title">404</h1>
+            <h2 class="sub-title">FinancialFlowTracker API v0.1.0</h2>
+            <p class="message">No such resource was found</p>
+            <span class="divider"></span>
+            <div class="actions">
+              <h2 class="tip">To view the API Documentation, click on the button below</h2>
+              <a href='/api-docs'>
+                <button type="button">
+                  Documentation
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
